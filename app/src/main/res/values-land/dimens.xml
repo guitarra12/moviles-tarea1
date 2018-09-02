@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="am_main_text">19dp</dimen>
+    <dimen name="am_main_padding">11dp</dimen>
+    <dimen name="am_main_margin_bottom">14dp</dimen>
+</resources>

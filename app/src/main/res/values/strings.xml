@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Tarea1</string>
+    <string name="am_ed_nombre_hint">Ingrese su nombre</string>
+    <string name="am_ed_nombre_tel_hint">Ingrese su teléfono</string>
+    <string name="am_tv_escolaridad_text">Escolaridad</string>
+    <string-array name="am_sp_escolaridad_options">
+        <item>Bachillerato</item>
+        <item>Técnico</item>
+        <item>Licenciatura</item>
+        <item>Maestría</item>
+        <item>Doctorado</item>
+    </string-array>
+    <string name="am_tv_genero_text">Género</string>
+    <string name="am_rb_fem_value">Femenino</string>
+    <string name="am_rb_mas_value">Masculino</string>
+    <string name="am_tv_libroFav_text">Libro Favorito</string>
+    <string name="am_chckb_deporte_text">Practica deporte</string>
+    <string name="am_btn_limpiar_text">Limpiar</string>
+    <string-array name="am_actv_libros_options">
+        <item>Cuentos extraodinarios</item>
+        <item>Diaro</item>
+        <item>100 años de soledad</item>
+        <item>El país de uno</item>
+        <item>Las crónicas de Narnia vol. 1</item>
+    </string-array>
+    <string name="am_dialog_clean_message">¿Está seguro que desea limpiar la pantalla?</string>
+    <string name="am_si">Sí</string>
+    <string name="am_no">No</string>
+</resources>

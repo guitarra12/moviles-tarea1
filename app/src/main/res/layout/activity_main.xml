@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityMain"
+    android:padding="@dimen/am_main_padding">
+
+    <EditText
+        android:id="@+id/am_et_nombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/am_ed_nombre_hint"
+        android:layout_marginBottom="@dimen/am_main_margin_bottom"/>
+
+    <EditText
+        android:id="@+id/am_et_telefono"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/am_et_nombre"
+        android:hint="@string/am_ed_nombre_tel_hint"
+        android:layout_marginBottom="@dimen/am_main_margin_bottom"/>
+
+    <TextView
+        android:id="@+id/am_tv_"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/am_et_telefono"
+        android:text="@string/am_tv_escolaridad_text"
+        android:textSize="@dimen/am_main_text"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="@dimen/am_main_margin_bottom"/>
+
+    <Spinner
+        android:id="@+id/am_sp_escolaridad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/am_tv_"
+        android:layout_marginBottom="@dimen/am_main_margin_bottom">
+    </Spinner>
+
+    <TextView
+        android:id="@+id/am_et_genero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/am_sp_escolaridad"
+        android:text="@string/am_tv_genero_text"
+        android:textSize="@dimen/am_main_text"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="@dimen/am_main_margin_bottom"/>
+
+    <RadioGroup
+        android:id="@+id/am_rg_genero"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/am_et_genero"
+        android:orientation="horizontal"
+        android:layout_marginBottom="@dimen/am_main_margin_bottom">
+
+        <RadioButton
+            android:id="@+id/am_rb_genero_fem"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/am_rb_fem_value"
+            android:layout_weight=".5"/>
+
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/am_rb_mas_value"
+            android:layout_weight=".5"/>
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/am_tv_libroFav"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/am_rg_genero"
+        android:text="@string/am_tv_libroFav_text"
+        android:textSize="@dimen/am_main_text"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="@dimen/am_main_margin_bottom"/>
+
+    <AutoCompleteTextView
+        android:id="@+id/am_actv_librofav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/am_tv_libroFav"
+        android:layout_marginBottom="@dimen/am_main_margin_bottom"/>
+
+    <CheckBox
+        android:id="@+id/am_cb_practicaDeporte"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/am_actv_librofav"
+        android:text="@string/am_chckb_deporte_text"
+        android:layout_marginBottom="@dimen/am_main_margin_bottom"/>
+
+    <Button
+        android:id="@+id/am_btn_limpiar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="@string/am_btn_limpiar_text"
+        android:gravity="center"
+        android:onClick="onBtnLimpiarClick"/>
+
+</RelativeLayout>
